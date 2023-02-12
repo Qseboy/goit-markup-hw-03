@@ -14,6 +14,11 @@ body {
    color: var(--text-color);
 }
 
+/* Reset */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -30,7 +35,21 @@ img {
     height: auto;
 }
 
-/* all h2 */
+button {
+    font-family: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+/* components */
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .section-title {
     font-size: 36px;
     line-height: 1.11;
@@ -39,7 +58,6 @@ img {
     color: var(--headers-color);
 }
 
-/* section subtitles */
 .section-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -48,7 +66,6 @@ img {
     color: var(--headers-color);
 }
 
-/* section texts */
 .section-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -64,13 +81,7 @@ img {
     cursor: pointer;
 }
 
-.container {
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-/* hidden headers */
+/* utility */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -120,11 +131,6 @@ img {
     display: flex;
     gap: 40px;
 }
-
-/* соседи от первого элемента с классом .nav-item */
-/* .nav-item + .nav-item { 
-    margin-left: 40px;
-} */
 
 .nav-link {
     display: block;
@@ -215,12 +221,8 @@ img {
     max-width: 264px;
 }
 
-.features-subtitle, .features-text {
-    margin: 0 0 8px 0;
-}
-
-.features-text {
-    margin: 0;
+.features-subtitle {
+    margin-bottom: 8px;
 }
 
 /* TASK SECTION */
@@ -229,13 +231,12 @@ img {
 }
 
 .tasks-title {
-    margin: 0 0 72px 0;
+    margin-bottom: 72px;
     text-align: center;
 }
 
 .tasks-list {
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 24px;
 }
 
@@ -243,11 +244,11 @@ img {
 .team {
     background: #F4F4FD;
     padding: 120px 0;
+    text-align: center;
 }
 
 .team-title {
-    margin: 0 0 72px 0;
-    text-align: center;
+    margin-bottom: 72px;
 }
 
 .team-list {
@@ -260,7 +261,6 @@ img {
     flex-basis: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    text-align: center;
     background: #FFFFFF;
 }
 
